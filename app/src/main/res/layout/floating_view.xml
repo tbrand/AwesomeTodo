@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.appapp.awesometodo.floating_view.MovableFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/floating_view_width"
+    android:layout_height="@dimen/floating_view_height">
+
+    <ImageView
+        android:src="@drawable/floating_view_background_shadow"
+        android:scaleType="fitCenter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5.2dp"
+        android:layout_marginLeft="8.2dp"
+        android:layout_marginRight="8.2dp"
+        android:layout_marginBottom="11.2dp"
+        android:background="@drawable/floating_view_background_round">
+
+        <TextView
+            android:id="@+id/floating_view_remaining_tasks"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"/>
+
+    </FrameLayout>
+
+</mobi.appapp.awesometodo.floating_view.MovableFrameLayout>

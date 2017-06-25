@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/colorPrimary">
+
+        <FrameLayout
+            android:id="@+id/main_switch_mode"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_width="100dp"
+            android:layout_height="30dp">
+
+            <FrameLayout
+                android:id="@+id/main_mode_background_left"
+                android:layout_width="51dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="@drawable/main_switch_on_left">
+
+                <TextView
+                    android:id="@+id/main_mode_text_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:text="ON"
+                    android:textSize="15sp"
+                    android:textColor="#fff"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/main_mode_background_right"
+                android:layout_width="51dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@drawable/main_switch_on_right">
+
+                <TextView
+                    android:id="@+id/main_mode_text_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="OFF"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPrimary"/>
+
+            </FrameLayout>
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/main_delete_all"
+            android:src="@drawable/ic_delete"
+            android:scaleType="fitCenter"
+            android:tint="@color/colorWhite"
+            android:padding="5dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/ic_delete_all"/>
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="80dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/colorAccentThin"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/main_add_task_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="left|top"
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"
+                android:hint="What to do next?"
+                android:textColorHint="@color/colorAccentThin"
+                android:lines="2"
+                android:maxLines="2"/>
+
+            <ImageButton
+                android:id="@+id/main_add_task"
+                android:src="@drawable/ic_add_task"
+                android:tint="@color/colorWhite"
+                android:layout_width="65dp"
+                android:layout_margin="10dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_add_task_button"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:id="@+id/row_task_clickable">
+
+        <ImageView
+            android:id="@+id/row_task_status"
+            android:src="@drawable/ic_task_done"
+            android:scaleType="fitCenter"
+            android:tint="@color/colorPrimary"
+            android:background="@null"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|start"/>
+
+        <TextView
+            android:id="@+id/row_task_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|start"
+            android:paddingLeft="12dp"
+            android:paddingRight="8dp"
+            android:text="TESTETSTEST"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:lines="2"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorAccentThin"/>
+</LinearLayout>
